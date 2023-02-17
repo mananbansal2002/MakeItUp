@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import { Splide,SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
-import { json } from 'react-router-dom';
+// import { json } from 'react-router-dom';
 
 function Veggie() {
 
@@ -39,7 +39,7 @@ getVeggie();
                 <SplideSlide key={recipes.id}>
                 <Card>
                     <p>{recipes.title}</p>
-                    <img src={recipes.image}/>
+                    <img src={recipes.image} alt={recipes.name}/>
                 <Gradient/>
                 </Card>
                 </SplideSlide>

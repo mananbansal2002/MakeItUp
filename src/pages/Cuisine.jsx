@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
-import { Link,useParams } from 'react-router-dom'
+// import { motion } from 'framer-motion'
+import { useParams } from 'react-router-dom'
 
 function Cuisine() {
   
@@ -34,7 +34,7 @@ useEffect(() =>{
     {cuisine.map((item)=>{
             return (
                 <Card key={item.id}>
-                    <img src={item.image}></img>
+                    <img src={item.image} alt ={item.name}></img>
                     <h4>{item.title}</h4>
                 </Card>
             );
